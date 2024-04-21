@@ -13,92 +13,105 @@
 </head>
 
 <body>
-    <header>
-        <section>
-            <figure>
-                <img src="./img/iconos/E.png" alt="logo">
-            </figure>
-            <h1>Erika Osuna</h1>
+    <header class="background">
+        <section class="container banner__estilo">
+            <section class="navbar__estilo">
+                <div class="logo__estilo">
+                    <figure>
+                        <img src="./img/iconos/E.png" alt="logo" title="Logo">
+                    </figure>
+                    <h1 class="title__navbar">Erika Osuna</h1>
+                </div>
+                <nav class="navbar__items__orientacion">
+                    <ul class="navbar__items">
+                        <li><a href="Index.html#sobre__mi">Sobre mi</a></li>
+                        <li><a href="Index.html#skills">Skills</a></li>
+                        <!-- <li><a href="Index.html#hobbies">Hobbies</a></li> -->
+                        <li><a href="Index.html#formacion">Formación</a></li>
+                        <li><a href="Index.html#proyectos">Proyectos</a></li>
+                        <li><a href="Index.html#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="presentacion__estilo">
+                <div class="presentacion__items">
+                    <h1 class="presentacion__title">¡Hola!, mi nombre es Erika Osuna <br> Desarrollador Web.
+                    </h1>
+                    <ul class="presentacion__enlaces">
+                        <li><a href="https://github.com/eosuna85?tab=repositories" target="_blank"><img
+                                    src="./img/iconos/github.png" alt="Repositorio GitHub"
+                                    title="Repositorio GitHub"></a>
+                            <p>GitHub</p>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/erika-osuna-29063b184/" target="_blank"><img
+                                    src="./img/iconos/linkedin.png" alt="Perfil de LinkedIn"
+                                    title="Perfil de LinkedIn"></a>
+                            <p>LinkedIn</p>
+                        </li>
+                        <li><button><img src="img/iconos/pdf.png" alt="Curriculo en pdf"
+                                    title="Curriculo en pdf"></button>
+                            <p>Curriculo</p>
+                        </li>
+                    </ul>
+                </div>
+                <picture class="presentacion__foto">
+                    <img src="./img/fotos/foto.jpg" alt="foto Erika Osuna" title="Erika Osuna">
+                </picture>
+            </section>
         </section>
-        <nav>
-            <ul>
-                <li><a href="Index.html#sobre__mi">Sobre mi</a></li>
-                <li><a href="Index.html#skills">Skills</a></li>
-                <li><a href="Index.html#hobbies">Hobbies</a></li>
-                <li><a href="Index.html#formacion">Formación</a></li>
-                <li><a href="Index.html#proyectos">Proyectos</a></li>
-                <li><a href="Index.html#contacto">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
-        <section>
-            <div>
-                <h1>¡Hola!, mi nombre es Erika Osuna - Desarrollador Web.
-                </h1>
+        <section class="sobre__mi__estilos container" id="sobre__mi">
+            <section class="carrusel">
+                <img src="./img/fotos/Foto1.jpg" alt="Foto Erika">
+                <img src="./img/fotos/Foto2.jpg" alt="Foto Erika">
+                <img src="./img/fotos/Foto3.jpg" alt="Foto Erika">
+                <img src="./img/fotos/Foto4.jpg" alt="Foto Erika">
+            </section>
+            <article>
+                <h2>Sobre mí</h2>
                 <p>Soy un técnico químico industrial en búsqueda de nuevas oportunidades y retos, actualmente enfocada
                     en mi formación como desarrollador web. Mi pasión por aprender me ha llevado a explorar el mundo de
                     la programación y la inteligencia artificial, con el objetivo de aplicar estos conocimientos en
                     análisis de datos y desarrollo frontend.
                 </p>
-                <div>
-                    <ul>
-                        <li><a href="https://github.com/eosuna85?tab=repositories" target="_blank">GitHub<svg
-                                    xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link"
-                                    width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M9 15l6 -6" />
-                                    <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
-                                    <path
-                                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" />
-                                </svg></a></li>
-                        <li><a href="https://www.linkedin.com/in/erika-osuna-29063b184/" target="_blank">LinkedIn<svg
-                                    xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link"
-                                    width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M9 15l6 -6" />
-                                    <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
-                                    <path
-                                        d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" />
-                                </svg></a></li>
-                        <li>Curriculo<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link"
-                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M9 15l6 -6" />
-                                <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
-                                <path
-                                    d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" />
-                            </svg></li>
-                    </ul>
-                </div>
-            </div>
-            <picture>
-                <img src="./img/foto.jpg" alt="foto Erika Osuna">
-            </picture>
+                <p>Mi experiencia previa se centra en la realización de análisis químicos en procesos industriales,
+                    garantizando el cumplimiento de estándares y el control de calidad.
+                    Soy hábil en la comunicación,
+                    liderazgo de equipos y resolución de conflictos. Estoy emocionada por seguir creciendo y contribuir
+                    con
+                    proyectos innovadores.</p>
+            </article>
         </section>
-        <section id="sobre__mi">
-            <h2>Sobre mí</h2>
-            <p>Mi experiencia previa se centra en la realización de análisis químicos en procesos industriales,
-                garantizando el cumplimiento de estándares y el control de calidad. Soy hábil en la comunicación,
-                liderazgo de equipos y resolución de conflictos. Estoy emocionada por seguir creciendo y contribuir con
-                proyectos innovadores.</p>
-        </section>
-        <section>
-            <section id="skills">
+        <section class="background__seccion">
+            <section class="skills__estilos container" id="skills">
                 <h2>Skills</h2>
-                <picture><img src="./img/iconos/Skills/HTML.png" alt="HTML5">HTML 5</picture>
-                <picture><img src="./img/iconos/Skills/CSS.png" alt="CSS3">CSS</picture>
-                <picture><img src="./img/iconos/Skills/JS.png" alt="JavaScript">JavaScript</picture>
-                <picture><img src="./img/iconos/Skills/Python.png" alt="Python">Python</picture>
-                <picture><img src="./img/iconos/Skills/MySQL.png" alt="MySQL">MySQL</picture>
-                <picture><img src="./img/iconos/Skills/Analisis.png" alt="Analisis de Datos">Analisis de Datos</picture>
-                <picture><img src="./img/iconos/Skills/Excel.png" alt="Excel">Excel</picture>
+                <div>
+                    <picture>
+                        <img src="./img/iconos/Skills/HTML.png" alt="HTML5"><p>HTML 5</p>
+                    </picture>
+                    <picture>
+                        <img src="./img/iconos/Skills/CSS.png" alt="CSS3"><p>CSS</p>
+                    </picture>
+                    <picture>
+                        <img src="./img/iconos/Skills/JS.png" alt="JavaScript"><p>JavaScript</p>
+                    </picture>
+                    <picture>
+                        <img src="./img/iconos/Skills/Python.png" alt="Python"><p>Python</p>
+                    </picture>
+                    <picture>
+                        <img src="./img/iconos/Skills/MySQL.png" alt="MySQL"><p>MySQL</p>
+                    </picture>
+                    <picture>
+                        <img src="./img/iconos/Skills/Analisis.png" alt="Analisis de Datos"><p>Analisis de Datos</p>
+                    </picture>
+                    <picture>
+                        <img src="./img/iconos/Skills/Excel.png" alt="Excel"><p>Excel</p>
+                    </picture>
+                </div>
             </section>
 
-            <section>
+            <!-- <section>
                 <h2 id="hobbies">Hobbies</h2>
                 <picture><img src="./img/iconos/Hobbies/cine.png" alt="Cine">Ver Peliculas</picture>
                 <picture><img src="./img/iconos/Hobbies/libro.png" alt="Libro">Leer</picture>
@@ -106,9 +119,9 @@
                 <picture><img src="./img/iconos/Hobbies/musica.png" alt="Musica">Escuchar Música</picture>
                 <picture><img src="./img/iconos/Hobbies/pintar.png" alt="Pintar">Dibujar y Pintar</picture>
                 <picture><img src="./img/iconos/Hobbies/game.png" alt="Videojuegos">Jugar Videojuegos</picture>
-            </section>
+            </section> -->
         </section>
-        <section id="formacion">
+        <section class="container formacion__estilo" id="formacion">
             <h2>Formación Académica</h2>
             <div>
                 <div>
@@ -141,7 +154,7 @@
                 </div>
             </div>
         </section>
-        <section id="proyectos">
+        <section class="container" id="proyectos">
             <h2>Experiencia Profesional</h2>
             <div>
                 <picture>
@@ -220,7 +233,7 @@
                 </div>
             </div>
         </section>
-        <section id="contacto">
+        <section class="container" id="contacto">
             <h2>Contacto</h2>
             <p>¿Quieres Contactarme?</p>
             <p>Completa el siguiente formulario y me pondre en contacto lo antes posible.</p>
