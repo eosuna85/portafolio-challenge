@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./estilos.css">
     <!-- Agregar el Favicon -->
     <link rel="icon" href="./img/iconos/E.ico">
+    <!-- Conexion con el JS -->
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -150,7 +152,8 @@
                         <p>Fundamentos de la Programación: Python - 2023</p>
                         <p>Analisis de Datos - 2023</p>
                         <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"
-                            target="_blank"><button class="boton__formacion__enlace">Argentina 4.0</button></a>
+                            target="_blank"><button class="boton__formacion__enlace"><span
+                                    class="primera_letra">A</span>rgentina 4.0</button></a>
                     </div>
                 </div>
                 <div class="formacion__card">
@@ -161,7 +164,8 @@
                         <p>FullStack Python - 2023</p>
                         <p>Big Data: Data Analytics - 2024 / En proceso</p>
                         <a href="https://agenciadeaprendizaje.bue.edu.ar/codo-a-codo/" target="_blank"><button
-                                class="boton__formacion__enlace">Codo A Codo</button></a>
+                                class="boton__formacion__enlace"><span class="primera_letra">C</span>odo A
+                                Codo</button></a>
                     </div>
                 </div>
                 <div class="formacion__card">
@@ -172,101 +176,82 @@
                         <p>Formación Fronted React </p>
                         <p>2024 / En proceso</p>
                         <a href="https://www.aluracursos.com/" target="_blank"><button
-                                class="boton__formacion__enlace">Alura Latam</button></a>
+                                class="boton__formacion__enlace"><span class="primera_letra">A</span>lura
+                                Latam</button></a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="background__seccion">
-            <section class="container proyectos__estilos" id="proyectos">
+        <section class="background__seccion" id="proyectos">
+            <section class="container proyectos__estilos">
                 <h2><span class="primera_letra">E</span>xperiencia Profesional</h2>
-                <section class="proyectos__cards">
-                    <div class="proyectos__estilos__cards">
-                        <picture>
-                            <img src="./img/sitios/Eureka Charter Grupal.png" alt="Pagina Grupal - Eureka Charter">
-                        </picture>
-                        <div class="proyectos__texto__estilos">
-                            <div class="proyectos__texto">
-                                <h3>Eureka Charter - Trabajo Grupal</h3>
-                                <p>Proyecto Codo a Codo - HTML, CSS y JavaScript</p>
-                            </div>
-                            <div class="proyectos__botones">
-                                <a
-                                    href="https://github.com/eosuna85/Proyecto-Eureka-Charter"><button>Repositorio</button></a>
-                                <a
-                                    href="https://eosuna85.github.io/Proyecto-Eureka-Charter/"><button>Demostración</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="proyectos__estilos__cards">
-                        <picture>
-                            <img src="./img/sitios/Clasicos Garage.png" alt="Clasicos Garage">
-                        </picture>
-                        <div class="proyectos__texto__estilos">
-                            <div class="proyectos__texto">
-                                <h3>Clasicos Garage</h3>
-                                <p>Proyecto Codo a Codo - HTML, CSS, JavaScript, Flask, Vue, Python, MySQL</p>
-                            </div>
-                            <div class="proyectos__botones">
-                                <a
-                                    href="https://github.com/eosuna85/TPO-Clasicos-Garage"><button>Repositorio</button></a>
-                                <a
-                                    href="https://eosuna85.github.io/TPO-Clasicos-Garage/"><button>Demostración</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="proyectos__estilos__cards">
-                        <picture>
-                            <img src="./img/sitios/Juego Secreto.png" alt="Numero Secreto">
-                        </picture>
-                        <div class="proyectos__texto__estilos">
-                            <div class="proyectos__texto">
-                                <h3>Numero Secreto</h3>
-                                <p>Challenge Alura - HTML, CSS y JavaScript</p>
-                            </div>
-                            <div class="proyectos__botones">
-                                <a
-                                    href="https://github.com/eosuna85/Juego_numero_secreto"><button>Repositorio</button></a>
-                                <a
-                                    href="https://eosuna85.github.io/Juego_numero_secreto/"><button>Demostración</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="proyectos__estilos__cards">
-                        <picture>
-                            <img src="./img/sitios/Encriptador de Texto.png" alt="Encriptador de Texto">
-                        </picture>
-                        <div class="proyectos__texto__estilos">
-                            <div class="proyectos__texto">
-                                <h3>Encriptador de Texto</h3>
-                                <p>Challenge Alura - HTML, CSS y JavaScript</p>
-                            </div>
-                            <div class="proyectos__botones">
-                                <a
-                                    href="https://github.com/eosuna85/eosuna85-Challenge__Encriptador-de-Texto"><button>Repositorio</button></a>
-                                <a
-                                    href="https://eosuna85.github.io/eosuna85-Challenge__Encriptador-de-Texto/"><button>Demostración</button></a>
+                <div class="proyectos__selector">
+                    <section class="proyectos__selector__estilos">
+                        <h3><span class="primera_letra">P</span>royectos</h3>
+                        <ul>
+                            <li id="eureka__charter__grupal"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-chevrons-right" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M7 7l5 5l-5 5" />
+                                    <path d="M13 7l5 5l-5 5" />
+                                </svg>Eureka Charter / Grupal</li>
+                            <li id="clasicos__garage"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-chevrons-right" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M7 7l5 5l-5 5" />
+                                    <path d="M13 7l5 5l-5 5" />
+                                </svg>Clasicos Garage</li>
+                            <li id="numero__secreto"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-chevrons-right" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M7 7l5 5l-5 5" />
+                                    <path d="M13 7l5 5l-5 5" />
+                                </svg>Juego Número Secreto</li>
+                            <li id="encriptador__texto"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-chevrons-right" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M7 7l5 5l-5 5" />
+                                    <path d="M13 7l5 5l-5 5" />
+                                </svg>Encriptador de Texto</li>
+                            <li id="eureka__charter__2"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-chevrons-right" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M7 7l5 5l-5 5" />
+                                    <path d="M13 7l5 5l-5 5" />
+                                </svg>Eureka Charter 2.0</li>
+                        </ul>
+                    </section>
+                    <section class="proyectos__cards">
+                        <div class="proyectos__estilos__cards">
+                            <picture>
+                                <img id="imagen__proyecto" src="./img/sitios/Eureka_Charter_Grupal.png" alt="Pagina Grupal - Eureka Charter">
+                            </picture>
+                            <div class="proyectos__texto__estilos">
+                                <div class="proyectos__texto">
+                                    <h3 id="titulo__proyecto">Eureka Charter - Trabajo Grupal</h3>
+                                    <p id="texto__proyecto">Proyecto Codo a Codo - HTML, CSS y JavaScript</p>
+                                </div>
+                                <div class="proyectos__botones">
+                                    <a id="repositorio__proyecto" href="https://github.com/eosuna85/Proyecto-Eureka-Charter"
+                                    target="_blank"><button><span
+                                                class="primera_letra">R</span>epositorio</button></a>
+                                    <a id="view__proyecto" href="https://eosuna85.github.io/Proyecto-Eureka-Charter/" target="_blank"><button><span
+                                                class="primera_letra">D</span>emostración</button></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="proyectos__estilos__cards">
-                        <picture>
-                            <img src="./img/sitios/Eureka Charter 2.0.png" alt="Eureka Charter 2.0">
-                        </picture>
-                        <div class="proyectos__texto__estilos">
-                            <div class="proyectos__texto">
-                                <h3>Eureka Charter 2.0</h3>
-                                <p>Proyecto Personal - HTML, CSS y JavaScript</p>
-                            </div>
-                            <div class="proyectos__botones">
-                                <a
-                                    href="https://github.com/eosuna85/Eureka-Charter-2.0"><button>Repositorio</button></a>
-                                <a
-                                    href="https://eosuna85.github.io/Eureka-Charter-2.0/"><button>Demostración</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </section>
         </section>
         <section class="container" id="contacto">
@@ -292,6 +277,7 @@
         <img src="./img/iconos/rafael.png" alt="Rafael - Teenage Mutant Ninja Turtles">
         <img src="./img/iconos/rafael(1).png" alt="Rafael - Teenage Mutant Ninja Turtles">
     </footer>
+
 </body>
 
 </html>
