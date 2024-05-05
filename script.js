@@ -8,6 +8,7 @@ const selecionProyectoClasicosGaraje = document.getElementById('clasicos__garage
 const selecionProyectoNumeroSecreto = document.getElementById('numero__secreto');
 const selecionProyectoEncriptadorTexto = document.getElementById('encriptador__texto');
 const selecionProyectoEureka2 = document.getElementById('eureka__charter__2');
+const seleccionLista = document.querySelectorAll('.item__proyecto');
 
 function cambiarTarjeta(imagen,titulo,parrafo,repositorio,view){
     imagenPagina.setAttribute('src',imagen);
@@ -15,7 +16,9 @@ function cambiarTarjeta(imagen,titulo,parrafo,repositorio,view){
     textoTarjeta.innerText = parrafo;
     repositorioProyecto.setAttribute('href',repositorio);
     viewProyecto.setAttribute('href',view);
-
+    seleccionLista.forEach(function(seleccion){
+        seleccion.classList.remove('seleccion__activa');
+    });
 };
 
 selecionProyectoEurekaGrupal.addEventListener('click', ()=>{
@@ -24,6 +27,7 @@ selecionProyectoEurekaGrupal.addEventListener('click', ()=>{
     'Proyecto Codo a Codo - HTML, CSS y JavaScript',
     'https://github.com/eosuna85/Proyecto-Eureka-Charter',
     'https://eosuna85.github.io/Proyecto-Eureka-Charter/');
+    selecionProyectoEurekaGrupal.classList.add('seleccion__activa');
 });
 
 selecionProyectoClasicosGaraje.addEventListener('click', ()=>{
@@ -32,6 +36,7 @@ selecionProyectoClasicosGaraje.addEventListener('click', ()=>{
     'Proyecto Codo a Codo - HTML, CSS, JavaScript, Flask, Vue, Python, MySQL',
     'https://github.com/eosuna85/TPO-Clasicos-Garage',
     'https://eosuna85.github.io/TPO-Clasicos-Garage/');
+    selecionProyectoClasicosGaraje.classList.add('seleccion__activa');
 });
 
 selecionProyectoNumeroSecreto.addEventListener('click',()=>{
@@ -40,6 +45,7 @@ selecionProyectoNumeroSecreto.addEventListener('click',()=>{
     'Challenge Alura - HTML, CSS y JavaScript',
     'https://github.com/eosuna85/Juego_numero_secreto',
     'https://eosuna85.github.io/Juego_numero_secreto/');
+    selecionProyectoNumeroSecreto.classList.add('seleccion__activa');
 });
 
 selecionProyectoEncriptadorTexto.addEventListener('click', ()=>{
@@ -48,6 +54,7 @@ selecionProyectoEncriptadorTexto.addEventListener('click', ()=>{
     'Challenge Alura - HTML, CSS y JavaScript',
     'https://github.com/eosuna85/eosuna85-Challenge__Encriptador-de-Texto',
     'https://eosuna85.github.io/eosuna85-Challenge__Encriptador-de-Texto/');
+    selecionProyectoEncriptadorTexto.classList.add('seleccion__activa');
 });
 
 selecionProyectoEureka2.addEventListener('click', ()=>{
@@ -56,5 +63,6 @@ selecionProyectoEureka2.addEventListener('click', ()=>{
     'Proyecto Personal - HTML, CSS y JavaScript',
     'https://github.com/eosuna85/Eureka-Charter-2.0',
     'https://eosuna85.github.io/Eureka-Charter-2.0/');
+    selecionProyectoEureka2.classList.add('seleccion__activa');
 });
 
