@@ -316,14 +316,22 @@ main {
     /* background: #e0e1e27a; */
     background: rgb(173, 172, 172);
     background: linear-gradient(346deg, rgba(147, 147, 147, 0.577) 16%, rgba(250, 250, 250, 0.76) 93%);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-36);
+    padding: var(--spacing-36);
+    margin: var(--spacing-24) 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
 .skills__estilos {
     display: grid;
-    grid-template-columns: repeat(2, 30% 70%);
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
-    margin: var(--spacing-68) auto;
-    padding: var(--spacing-36);
+    gap: var(--spacing-68);
+    padding: var(--spacing-20);
 }
 
 .skills__estilos article {
@@ -345,8 +353,8 @@ main {
     text-align: center;
 }
 
-#skills__texto1,
-#skills__texto2 {
+.skills__texto__skills,
+.skills__texto__hobbies{
     font-size: var(--font-small);
     text-align: justify;
     font-family: var(--alternative-font-family);
@@ -368,7 +376,7 @@ main {
     gap: var(--spacing-8);
     border: solid 1px var(--dark-solid-2);
     border-radius: 25px;
-    box-shadow: var(--text-shadow);
+    /* box-shadow: var(--text-shadow); */
     padding: var(--spacing-8);
     background-color: #f9f8f8d7;
     width: 200px;
@@ -395,7 +403,10 @@ main {
 
 .skills__estilos picture:hover {
     transform: translateY(-6px);
+    filter: drop-shadow(#ff0000ab 4px 3px 2px);
 }
+
+
 
 /* + FORMACION */
 
@@ -471,7 +482,7 @@ main {
     padding: 2px var(--spacing-8);
     border-radius: 10px;
     font-family: var(--alternative-font-family);
-    box-shadow: var(--text-shadow);
+    /* box-shadow: var(--text-shadow); */
     color: var(--dark-solid-1);
     background: #dfdedea6;
     /* background: linear-gradient(0deg, rgba(203,18,40,1) 16%, rgba(42,3,7,1) 93%); */
@@ -479,11 +490,16 @@ main {
 }
 
 .boton__formacion__enlace:hover {
-    transform: translateY(3px);
-    filter: none;
+    transform: translateY(-3px);
+    /* filter: drop-shadow(#202021d1 4px 3px 2px); */
+    box-shadow: var(--text-shadow);
 }
 
 /* + PROYECTOS */
+
+.proyectos{
+    height: 100vh;
+}
 
 .proyectos__estilos {
     display: flex;
@@ -491,11 +507,7 @@ main {
     /* align-items: center; */
     gap: var(--spacing-16);
     margin: var(--spacing-24) auto;
-    padding: var(--spacing-24);
-    /* border: 1px solid var(--dark-solid-2);
-    border-radius: 10px;
-    background-color: #68696a19; */
-
+    padding: var(--spacing-68);
 }
 
 .proyectos__estilos h2 {
@@ -631,15 +643,16 @@ main {
     width: 120px;
     border-radius: 10px;
     font-family: var(--alternative-font-family);
-    box-shadow: var(--text-shadow);
+    /* box-shadow: var(--text-shadow); */
     color: var(--dark-solid-1);
     background: #dfdedea6;
     transition: 0.2s ease-in-out;
 }
 
 .proyectos__botones button:hover {
-    transform: translateY(3px);
+    transform: translateY(-3px);
     filter: none;
+    box-shadow: var(--text-shadow);
 }
 
 /* + CONTACTO */
