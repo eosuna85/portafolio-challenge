@@ -656,6 +656,60 @@ main {
 }
 
 /* + CONTACTO */
+.estilo__formulario{
+    display: flex;
+    gap: var(--spacing-36);
+    align-items: center;
+    padding: var(--spacing-68);
+}
+
+.estilo__formulario div{
+    display: flex;
+    flex-direction: column;
+}
+
+.estilo__formulario h2{
+    font-family: var(--alternative-font-family);
+    font-size: var(--font-jumbo);
+    font-weight: 300;
+    color: var(--dark-solid-1);
+    text-shadow: var(--text-shadow);
+    text-align: center;
+    padding: var(--spacing-8);
+}
+
+.estilo__formulario p{
+    font-family: var(--alternative-font-family);
+    font-size: var(--font-medium);
+    font-weight: 300;
+    color: var(--dark-solid-1);
+    text-align: center;
+}
+
+.estilo__formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+}
+
+.estilo__formulario label{
+    font-family: var(--alternative-font-family);
+    font-size: var(--font-small);
+    font-weight: 400;
+    color: var(--dark-solid-2);
+}
+
+.estilo__formulario input{
+
+}
+
+.area__de__texto {
+    background-color: transparent;
+    resize: none;
+    overflow: hidden;
+    text-align: justify;
+    /* text-transform: lowercase; */
+}
 
 
 
