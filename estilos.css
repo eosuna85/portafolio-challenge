@@ -328,7 +328,7 @@ main {
 
 .skills__estilos {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: var(--spacing-68);
     padding: var(--spacing-20);
@@ -354,7 +354,7 @@ main {
 }
 
 .skills__texto__skills,
-.skills__texto__hobbies{
+.skills__texto__hobbies {
     font-size: var(--font-small);
     text-align: justify;
     font-family: var(--alternative-font-family);
@@ -482,7 +482,7 @@ main {
     padding: 2px var(--spacing-8);
     border-radius: 10px;
     font-family: var(--alternative-font-family);
-    /* box-shadow: var(--text-shadow); */
+    box-shadow: var(--text-shadow);
     color: var(--dark-solid-1);
     background: #dfdedea6;
     /* background: linear-gradient(0deg, rgba(203,18,40,1) 16%, rgba(42,3,7,1) 93%); */
@@ -490,14 +490,14 @@ main {
 }
 
 .boton__formacion__enlace:hover {
-    transform: translateY(-3px);
+    transform: translateY(3px);
     /* filter: drop-shadow(#202021d1 4px 3px 2px); */
-    box-shadow: var(--text-shadow);
+    box-shadow: none;
 }
 
 /* + PROYECTOS */
 
-.proyectos{
+.proyectos {
     height: 100vh;
 }
 
@@ -575,7 +575,7 @@ main {
     height: 100%;
 }
 
-.proyectos__estilos__cards picture{
+.proyectos__estilos__cards picture {
     max-width: 100%;
     width: 600px;
     max-height: 100%;
@@ -609,7 +609,7 @@ main {
     align-items: center;
 }
 
-.proyectos__texto h3{
+.proyectos__texto h3 {
     font-family: var(--alternative-font-family);
     font-size: var(--font-small);
     font-weight: 400;
@@ -618,7 +618,7 @@ main {
     color: var(--dark-solid-1);
 }
 
-.proyectos__texto p{
+.proyectos__texto p {
     font-family: var(--alternative-font-family);
     font-size: var(--font-xsmall);
     font-weight: 300;
@@ -628,13 +628,13 @@ main {
     width: 310px;
 }
 
-.proyectos__botones{
+.proyectos__botones {
     display: flex;
     align-items: center;
     gap: var(--spacing-8);
 }
 
-.proyectos__botones button{
+.proyectos__botones button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -643,32 +643,31 @@ main {
     width: 120px;
     border-radius: 10px;
     font-family: var(--alternative-font-family);
-    /* box-shadow: var(--text-shadow); */
+    box-shadow: var(--text-shadow);
     color: var(--dark-solid-1);
     background: #dfdedea6;
     transition: 0.2s ease-in-out;
 }
 
 .proyectos__botones button:hover {
-    transform: translateY(-3px);
-    filter: none;
-    box-shadow: var(--text-shadow);
+    transform: translateY(3px);
+    box-shadow: none;
 }
 
 /* + CONTACTO */
-.estilo__formulario{
+.estilo__formulario {
     display: flex;
     gap: var(--spacing-36);
     align-items: center;
     padding: var(--spacing-68);
 }
 
-.estilo__formulario div{
+.estilo__formulario div {
     display: flex;
     flex-direction: column;
 }
 
-.estilo__formulario h2{
+.estilo__formulario h2 {
     font-family: var(--alternative-font-family);
     font-size: var(--font-jumbo);
     font-weight: 300;
@@ -678,7 +677,7 @@ main {
     padding: var(--spacing-8);
 }
 
-.estilo__formulario p{
+.estilo__formulario p {
     font-family: var(--alternative-font-family);
     font-size: var(--font-medium);
     font-weight: 300;
@@ -686,21 +685,37 @@ main {
     text-align: center;
 }
 
-.estilo__formulario form{
+.estilo__formulario form {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-12);
+    border-radius: 15px;
+    border: 1px solid var(--dark-solid-1);
+    padding: var(--spacing-16);
+    box-shadow: var(--text-shadow);
+    background: rgb(173, 172, 172);
+    background: linear-gradient(346deg, rgba(147, 147, 147, 0.577) 16%, rgba(250, 250, 250, 0.76) 93%);
 }
 
-.estilo__formulario label{
+.estilo__formulario label {
     font-family: var(--alternative-font-family);
     font-size: var(--font-small);
     font-weight: 400;
-    color: var(--dark-solid-2);
+    color: var(--dark-solid-1);
+    padding: 3px 0;
+    text-shadow: var(--text-shadow);
 }
 
-.estilo__formulario input{
-
+.estilo__formulario_input {
+    border-radius: 10px;
+    border: 1px solid var(--dark-solid-1);
+    padding: 7px 10px;
+    background-color: #ffffff;
+    font-family: var(--alternative-font-family);
+    font-size: var(--font-small);
+    font-weight: 100;
+    color: var(--dark-solid-1);
+    /* box-shadow: var(--text-shadow); */
 }
 
 .area__de__texto {
@@ -709,11 +724,87 @@ main {
     overflow: hidden;
     text-align: justify;
     /* text-transform: lowercase; */
+    border-radius: 10px;
+    border: 1px solid var(--dark-solid-1);
+    padding: 7px 10px;
+    background-color: #ffffff;
+    font-family: var(--alternative-font-family);
+    font-size: var(--font-small);
+    font-weight: 100;
+    color: var(--dark-solid-1);
+    /* box-shadow: var(--text-shadow); */
 }
 
+#botonEnviar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--dark-solid-1);
+    height: 25px;
+    width: 120px;
+    border-radius: 10px;
+    font-family: var(--alternative-font-family);
+    box-shadow: var(--text-shadow);
+    color: var(--dark-solid-1);
+    background: var(--light-font-solid);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
 
+#botonEnviar:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+}
 
 /* + FOOTER */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-12);
+    padding: var(--spacing-36);
+    background: rgb(173, 172, 172);
+    background: linear-gradient(346deg, rgba(147, 147, 147, 0.577) 16%, rgba(250, 250, 250, 0.76) 93%);
+}
+
+footer h2{
+    font-family: var(--alternative-font-family);
+    font-size: var(--font-large);
+    font-weight: 100;
+    color: var(--dark-solid-1);
+    text-shadow: var(--text-shadow);
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+footer img{
+    height: 100%;
+    width: 100%;
+    filter: none;
+}
+
+#rafael1{
+    display: block;
+}
+
+#rafael2{
+    display: none;
+}
+
+footer div:hover{
+    #rafael1{
+        display: none;
+    }
+    
+    #rafael2{
+        display: block;
+    }
+}
 
 @media screen and (max-width: 992px) {}
 
