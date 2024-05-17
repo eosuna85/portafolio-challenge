@@ -65,4 +65,3 @@ selecionProyectoEureka2.addEventListener('click', ()=>{
     'https://eosuna85.github.io/Eureka-Charter-2.0/');
     selecionProyectoEureka2.classList.add('seleccion__activa');
 });
-

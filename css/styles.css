@@ -625,7 +625,8 @@ main {
     text-align: center;
     color: var(--dark-solid-1);
     max-width: 100%;
-    width: 310px;
+    width: 270px;
+    white-space: wrap;
 }
 
 .proyectos__botones {
@@ -756,6 +757,69 @@ main {
     box-shadow: none;
 }
 
+
+/* + Validación */
+
+.estilo__formulario-correcto {
+    border: 1px solid #7bc62d;
+}
+
+.estilo__formulario-incorrecto {
+    border: 1px solid var(--transition-font-1);
+}
+
+.mensaje__alerta {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#mensaje-incorrecto,
+#mensaje-correcto {
+    display: none;
+}
+
+.mensaje__alerta .mensaje-incorrecto_correcto {
+    font-family: var(--alternative-font-family);
+    font-size: var(--font-small);
+    font-weight: 300;
+    color: var(--dark-solid-1);
+    display: flex;
+    gap: var(--spacing-8);
+    padding: 0 var(--spacing-8);
+    align-items: center;
+}
+
+
+/* + Boton Flotante */
+
+#btn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    outline: none;
+    background: linear-gradient(0deg, rgba(203, 18, 40, 1) 16%, rgba(42, 3, 7, 1) 93%);
+    color: var(--light-font-solid);
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 16px;
+    border: 1px solid var(--dark-solid-3);
+    box-shadow: var(--text-shadow);
+    transition: transform 0.3s ease-in-out;
+}
+
+#btn:hover {
+    transform: scale(1.2);
+}
+
+#svgTop {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+
 /* + FOOTER */
 
 footer{
@@ -806,8 +870,505 @@ footer div:hover{
     }
 }
 
-@media screen and (max-width: 992px) {}
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 992px) {
+
+    /* + HEADER */
+    /* + NAVBAR */
+    .background {
+        background-image: url(../img/backgrounds/backgraund1.jpg);
+        background-size: cover;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: var(--alternative-font-family);
+        color: var(--dark-solid-1);
+        height: 650px;
+    }
+
+    .banner__estilo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: var(--spacing-16) 0;
+        position: relative;
+    }
+
+    .navbar__estilo {
+        display: flex;
+        justify-content: center;
+        margin: var(--spacing-16) var(--spacing-8);
+    }
+
+    .logo__estilo {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-12);
+        max-width: 35vw;
+    }
+
+    .title__navbar {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        font-size: var(--font-jumbo);
+        font-weight: 400;
+        text-shadow: var(--text-shadow);
+    }
+
+    .navbar__items__orientacion {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .navbar__items {
+        display: none;
+    }
+
+    .presentacion__estilo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        margin: var(--spacing-36) 0;
+        gap: var(--spacing-8);
+    }
+
+    .presentacion__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-8);
+    }
+
+    .presentacion__title {
+        font-family: var(--base-font-family);
+        font-size: var(--font-large);
+        font-weight: 300;
+        color: var(--dark-solid-1);
+        text-shadow: #8e8e90d4 2px 2px 2px;
+        text-align: center;
+    }
+
+    .presentacion__enlaces {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-36);
+    }
+
+    .presentacion__enlaces li {
+        max-width: 5vw;
+    }
+
+    .presentacion__enlaces p {
+        text-align: center;
+    }
+
+
+    /* + MAIN */
+    /* + SOBRE MI */
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sobre__mi__estilos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-12);
+        padding: var(--spacing-12);
+        margin: 0;
+        height: 600px;
+    }
+
+    .sobre__mi__estilos h2 {
+        font-size: var(--font-large);
+        font-weight: 300;
+        color: var(--dark-solid-1);
+        font-family: var(--base-font-family);
+        padding: var(--spacing-8);
+        text-shadow: var(--text-shadow);
+    }
+
+    .primera_letra {
+        color: var(--transition-font-1);
+    }
+
+    .sobre__mi__estilos p {
+        font-size: var(--font-small);
+        font-weight: 300;
+        font-family: var(--base-font-family);
+        color: var(--dark-solid-1);
+        text-align: justify;
+        padding: 0 var(--spacing-16);
+    }
+
+    .carrusel {
+        display: grid;
+        grid: auto-flow var(--spacing-100)/repeat(2, var(--spacing-100));
+        /* gap: var(--spacing-8); */
+    }
+
+    .carrusel img {
+        width: 100%;
+        aspect-ratio: 1;
+        cursor: pointer;
+        filter: none;
+        z-index: 0;
+        /* transition: .20s, z-index 0s .25s; */
+    }
+
+    /* + SKILLS */
+
+    .background__seccion {
+        /* background: #e0e1e27a; */
+        background: rgb(173, 172, 172);
+        background: linear-gradient(346deg, rgba(147, 147, 147, 0.577) 16%, rgba(250, 250, 250, 0.76) 93%);
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-16);
+        padding: var(--spacing-36);
+        margin: 0;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skills__estilos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: var(--spacing-20);
+        padding: var(--spacing-20);
+    }
+
+    .skills__estilos article {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-8);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skills__estilos h2 {
+        padding: var(--spacing-8);
+        font-family: var(--base-font-family);
+        font-size: var(--font-large);
+        font-weight: 300;
+        color: var(--dark-solid-1);
+        text-shadow: var(--text-shadow);
+        width: 300px;
+        text-align: center;
+    }
+
+    .skills__texto__skills,
+    .skills__texto__hobbies {
+        font-size: var(--font-small);
+        text-align: justify;
+        font-family: var(--alternative-font-family);
+        font-weight: 300;
+        margin: auto var(--spacing-12);
+    }
+
+    .skills__estilos div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-8);
+        /* margin-bottom: var(--spacing-36); */
+    }
+
+    .skills__estilos picture {
+        display: flex;
+        gap: var(--spacing-8);
+        border: solid 1px var(--dark-solid-2);
+        border-radius: 25px;
+        /* box-shadow: var(--text-shadow); */
+        padding: var(--spacing-8);
+        background-color: #f9f8f8d7;
+        width: 170px;
+    }
+
+    .skills__estilos img {
+        max-width: 25px;
+        border-radius: 12px;
+        filter: none;
+    }
+
+    .boton__skills {
+        font-family: var(--alternative-font-family);
+        font-size: 0.7em;
+        font-weight: 300;
+        white-space: nowrap;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    /* + FORMACION */
+
+    .formacion__estilo {
+        margin: var(--spacing-36) auto;
+        height: 600px;
+        padding: var(--spacing-28);
+    }
+
+    .formacion__estilo h2 {
+        font-size: var(--font-large);
+    }
+
+    .formacion__card {
+        width: 280px;
+        height: 350px;
+        gap: var(--spacing-12);
+    }
+
+    .formacion__card_texto {
+        justify-content: space-between;
+        padding: var(--spacing-8);
+        width: 100%;
+        height: 100%;
+    }
+
+    /* + PROYECTOS */
+
+    .proyectos__estilos {
+        gap: var(--spacing-12);
+        margin: var(--spacing-8);
+        padding: var(--spacing-12);
+    }
+
+    .proyectos__estilos h2 {
+        font-size: var(--font-large);
+    }
+
+    .proyectos__selector__estilos h3 {
+        font-size: var(--font-medium);
+    }
+
+    .proyectos__selector__estilos li {
+        font-size: var(--font-small);
+    }
+
+    .proyectos__cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .proyectos__estilos__cards {
+        width: 75%;
+        height: 75%;
+        margin: var(--spacing-8);
+    }
+
+    /* + CONTACTO */
+    .estilo__formulario {
+        height: 600px;
+    }
+
+    .estilo__formulario h2 {
+        font-size: var(--font-large);
+    }
+
+    .estilo__formulario p {
+        font-size: var(--font-small);
+    }
+
+    .estilo__formulario form {
+        gap: var(--spacing-16);
+        padding: var(--spacing-16);
+    }
+
+    .estilo__formulario label {
+        font-size: var(--font-xsmall);
+        padding: 3px 0;
+    }
+
+    .estilo__formulario_input {
+        padding: 5px 7px;
+        font-size: var(--font-xsmall);
+    }
+
+    .area__de__texto {
+        font-size: var(--font-xsmall);
+    }
+
+    /* + FOOTER */
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-12);
+        padding: var(--spacing-24);
+        background: rgb(173, 172, 172);
+        background: linear-gradient(346deg, rgba(147, 147, 147, 0.577) 16%, rgba(250, 250, 250, 0.76) 93%);
+    }
+
+    footer div {
+        height: 40px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    /* + HEADER */
+    /* + NAVBAR */
+    .background {
+        height: 550px;
+    }
+
+    .logo__estilo {
+        max-width: 40vw;
+    }
+
+    .presentacion__enlaces p {
+        text-align: center;
+        font-size: var(--font-small);
+    }
+
+    /* + MAIN */
+    /* + SOBRE MI */
+
+    .sobre__mi__estilos {
+        gap: var(--spacing-8);
+    }
+
+    .sobre__mi__estilos p {
+        padding: var(--spacing-8);
+    }
+
+    /* + SKILLS */
+
+    .skills__estilos {
+        grid-template-columns: repeat(1, 2fr);
+        gap: var(--spacing-8);
+    }
+
+    .skills__texto__skills,
+    .skills__texto__hobbies {
+        display: none;
+    }
+
+    .hobbies__article {
+        order: -1;
+        flex-basis: 100%;
+        /* Para asegurar que el artículo ocupe todo el ancho disponible si es necesario */
+    }
+
+    /* + FORMACION */
+
+    .formacion__estilo {
+        margin: var(--spacing-8);
+        height: 500px;
+        padding: var(--spacing-12);
+        gap: 0;
+    }
+
+    .formacion__estilo h2 {
+        font-size: var(--font-large);
+    }
+
+    .formacion__card {
+        width: 220px;
+        height: 300px;
+        gap: var(--spacing-8);
+    }
+
+    .formacion__card img {
+        width: 100%;
+        height: 15vh;
+    }
+
+    .formacion__card_texto {
+        justify-content: space-around;
+        padding: var(--spacing-8);
+    }
+
+    /* + PROYECTOS */
+
+    .proyectos {
+        height: 75vh;
+    }
+
+    .proyectos__estilos {
+        gap: var(--spacing-12);
+        margin: 0;
+        padding: var(--spacing-12);
+    }
+
+    .proyectos__estilos h2 {
+        font-size: var(--font-large);
+    }
+
+    .proyectos__selector {
+        display: flex;
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .proyectos__selector__estilos h3 {
+        font-size: var(--font-medium);
+    }
+
+    .proyectos__selector__estilos li {
+        font-size: var(--font-xsmall);
+        white-space: nowrap;
+    }
+
+
+    .proyectos__estilos__cards picture {
+        max-width: 100%;
+        width: 450px;
+        max-height: 100%;
+        height: 200px;
+    }
+
+    .proyectos__estilos__cards {
+        width: 60%;
+        height: 50%;
+        margin: v0;
+    }
+
+    /* + CONTACTO */
+    .estilo__formulario {
+        height: 600px;
+    }
+
+    .estilo__formulario h2 {
+        font-size: var(--font-large);
+    }
+
+    .estilo__formulario p {
+        font-size: var(--font-small);
+    }
+
+    .estilo__formulario form {
+        gap: var(--spacing-16);
+        padding: var(--spacing-16);
+    }
+
+    .estilo__formulario label {
+        font-size: var(--font-xsmall);
+        padding: 3px 0;
+    }
+
+    .estilo__formulario_input {
+        padding: 5px 7px;
+        font-size: var(--font-xsmall);
+    }
+
+    .area__de__texto {
+        font-size: var(--font-xsmall);
+    }
+}
 
 @media screen and (max-width: 600px) {}
