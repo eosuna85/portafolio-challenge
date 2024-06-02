@@ -566,6 +566,7 @@ main {
     align-items: center;
     background-color: #f9f8f8d7;
     border-radius: 10px;
+    width: 30vw;
     box-shadow: var(--text-shadow);
     max-height: 100%;
     max-width: 100%;
@@ -955,10 +956,19 @@ footer {
         height: 30vh;
     }
 
+    .proyectos__estilos__cards{
+        max-width: 100%;
+        width: 35vw;
+        max-height: 100%;
+    }
+
+    .proyectos__texto__estilos {
+        height: 25vh;
+    }
+
 }
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
 
     /* + HEADER */
     /* + NAVBAR */
@@ -1043,6 +1053,12 @@ footer {
         font-size: var(--font-small);
     }
 
+    .proyectos__estilos__cards{
+        max-width: 100%;
+        width: 40vw;
+        max-height: 100%;
+    }
+
     .proyectos__estilos__cards__picture {
         max-width: 100%;
         /* width: 30vw; */
@@ -1069,6 +1085,7 @@ footer {
         padding: var(--spacing-20);
     }
 }
+
 
 @media screen and (max-width: 600px) {
 
@@ -1159,6 +1176,12 @@ footer {
         justify-content: center;
     }
 
+    .proyectos__estilos__cards{
+        max-width: 100%;
+        width: 50vw;
+        max-height: 100%;
+    }
+
 
     .proyectos__estilos__cards__picture {
         max-width: 100%;
@@ -1237,6 +1260,13 @@ footer {
 
     /* + SKILLS */
 
+    .background__seccion {
+        padding: var(--spacing-24);
+    }
+    
+    .skills__estilos {
+        padding: 0;
+    }
 
     .skills__parrafo {
         display: none;
@@ -1244,6 +1274,7 @@ footer {
 
     .skills__estilos__div {
         gap: var(--spacing-24);
+        padding: 0;
     }
 
     .skills__estilos__picture {
@@ -1266,6 +1297,10 @@ footer {
 
     /* + FORMACION */
 
+    .formacion__estilo {
+        padding: var(--spacing-24) var(--spacing-8);
+    }
+
     .formacion__contenedor {
         display: flex;
         flex-direction: column;
@@ -1276,12 +1311,12 @@ footer {
     .formacion__card {
         max-width: 100%;
         max-height: 100%;
-        width: 45vw;
+        width: 55vw;
         height: 48vh;
     }
 
     .formacion__card__img {
-        width: 45vw;
+        width: 55vw;
         height: 22vh;
         max-width: 100%;
         max-height: 100%;
@@ -1301,6 +1336,7 @@ footer {
         width: 60vw;
         max-height: 100%;
         max-width: 100%;
+        height: 63vh;
     }
 
     .proyectos__estilos__cards__picture {
@@ -1308,5 +1344,10 @@ footer {
         width: 60vw;
         max-height: 100%;
     }
+    .proyectos__texto__estilos {
+        align-items: center;
+        justify-content: center;
+    }
 
+    
 }
