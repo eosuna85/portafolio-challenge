@@ -157,7 +157,7 @@ button {
     align-items: center;
 }
 
-.navbar__estilo__lista{
+.navbar__estilo__lista {
     font-size: var(--font-medium);
     font-weight: 400;
     text-shadow: var(--text-shadow);
@@ -174,7 +174,6 @@ button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: var(--spacing-12);
 }
 
 .presentacion__items {
@@ -201,11 +200,11 @@ button {
     gap: var(--spacing-20);
 }
 
-.presentacion__enlaces__estilo{
+.presentacion__enlaces__estilo {
     max-width: 4vw;
 }
 
-.iconos__presentacion{
+.iconos__presentacion {
     border-radius: 5px;
     transition: 0.3s ease-in-out;
 }
@@ -215,17 +214,17 @@ button {
     filter: none;
 }
 
-.presentacion__enlaces__parrafo{
+.presentacion__enlaces__parrafo {
     text-align: center;
     font-size: var(--font-xsmall);
 }
 
-.presentacion__foto__estilo{
+.presentacion__foto__estilo {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
-    max-width: 75%;
+    max-width: 65%;
     border-radius: 250px;
 }
 
@@ -245,7 +244,7 @@ main {
     padding: var(--spacing-36);
 }
 
-.sobre__mi__subtitle{
+.sobre__mi__subtitle {
     font-size: var(--font-jumbo);
     font-weight: 300;
     color: var(--dark-solid-1);
@@ -258,7 +257,7 @@ main {
     color: var(--transition-font-1);
 }
 
-.sobre__mi__parrafo{
+.sobre__mi__parrafo {
     font-size: var(--font-medium);
     font-weight: 300;
     font-family: var(--base-font-family);
@@ -332,7 +331,7 @@ main {
     padding: var(--spacing-20);
 }
 
-.skills__article{
+.skills__article {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-8);
@@ -340,7 +339,7 @@ main {
     justify-content: center;
 }
 
-.skills__subtitle{
+.skills__subtitle {
     padding: var(--spacing-8);
     font-family: var(--base-font-family);
     font-size: var(--font-jumbo);
@@ -359,7 +358,7 @@ main {
     margin: auto var(--spacing-12);
 }
 
-.skills__estilos__div{
+.skills__estilos__div {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -367,7 +366,7 @@ main {
     gap: var(--spacing-16);
 }
 
-.skills__estilos__picture{
+.skills__estilos__picture {
     display: flex;
     align-items: center;
     gap: var(--spacing-8);
@@ -378,7 +377,7 @@ main {
     width: 200px;
 }
 
-.skills__estilos__img{
+.skills__estilos__img {
     max-width: 30px;
     border-radius: 12px;
     filter: none;
@@ -391,7 +390,7 @@ main {
     white-space: nowrap;
 }
 
-.skills__estilos__picture{
+.skills__estilos__picture {
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
@@ -407,10 +406,10 @@ main {
     display: grid;
     gap: var(--spacing-36);
     align-items: center;
-    padding: var(--spacing-20);
+    padding: var(--spacing-68) var(--spacing-20);
 }
 
-.formacion__title{
+.formacion__title {
     padding: var(--spacing-8);
     font-family: var(--base-font-family);
     font-size: var(--font-jumbo);
@@ -468,7 +467,7 @@ main {
     justify-content: space-between;
 }
 
-.formacion__texto__estilo{
+.formacion__texto__estilo {
     font-family: var(--alternative-font-family);
     font-size: var(--font-xsmall);
     color: var(--dark-solid-1);
@@ -495,10 +494,6 @@ main {
 
 /* + PROYECTOS */
 
-.proyectos {
-    /* height: 100vh; */
-}
-
 .proyectos__estilos {
     display: flex;
     flex-direction: column;
@@ -507,7 +502,7 @@ main {
     /* padding: var(--spacing-68); */
 }
 
-.proyecto__subtitle{
+.proyecto__subtitle {
     padding: var(--spacing-8);
     font-family: var(--base-font-family);
     font-size: var(--font-jumbo);
@@ -530,7 +525,7 @@ main {
     gap: var(--spacing-8);
 }
 
-.proyecto__lista{
+.proyecto__lista {
     font-family: var(--alternative-font-family);
     font-weight: 300;
     font-size: var(--font-large);
@@ -544,7 +539,7 @@ main {
     flex-direction: column;
 }
 
-.item__proyecto{
+.item__proyecto {
     white-space: nowrap;
     font-family: var(--alternative-font-family);
     font-size: var(--font-medium);
@@ -578,7 +573,7 @@ main {
 
 .proyectos__estilos__cards__picture {
     max-width: 100%;
-    width: 35vw;
+    width: 40vw;
     max-height: 100%;
     height: 40vh;
     display: flex;
@@ -663,6 +658,7 @@ main {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-36);
     align-items: center;
+    justify-items: center;
     padding: var(--spacing-68);
 }
 
@@ -700,7 +696,7 @@ main {
     box-shadow: var(--text-shadow);
     background: rgb(173, 172, 172);
     background: linear-gradient(346deg, rgba(147, 147, 147, 0.577) 16%, rgba(250, 250, 250, 0.76) 93%);
-    width: 35vw;
+    width: 30vw;
 }
 
 .estilo__formulario__label {
@@ -751,8 +747,8 @@ main {
     border-radius: 10px;
     font-family: var(--alternative-font-family);
     box-shadow: var(--text-shadow);
-    color: var(--dark-solid-1);
-    background: var(--light-font-solid);
+    color: var(--light-font-solid);
+    background: linear-gradient(0deg, rgba(203, 18, 40, 1) 16%, rgba(42, 3, 7, 1) 93%);
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
@@ -824,7 +820,7 @@ main {
 
 /* + FOOTER */
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -834,7 +830,7 @@ footer{
     background: linear-gradient(346deg, rgba(147, 147, 147, 0.577) 16%, rgba(250, 250, 250, 0.76) 93%);
 }
 
-.footer__title{
+.footer__title {
     font-family: var(--alternative-font-family);
     font-size: var(--font-large);
     font-weight: 100;
@@ -842,32 +838,475 @@ footer{
     text-shadow: var(--text-shadow);
 }
 
-.footer__div{
+.footer__div {
     display: flex;
     align-items: center;
     height: 60px;
 }
 
-.footer__img{
+.footer__img {
     height: 100%;
     width: 100%;
     filter: none;
 }
 
-#rafael1{
+#rafael1 {
     display: block;
 }
 
-#rafael2{
+#rafael2 {
     display: none;
 }
 
-.footer__div:hover{
-    #rafael1{
+.footer__div:hover {
+    #rafael1 {
         display: none;
     }
-    
-    #rafael2{
+
+    #rafael2 {
         display: block;
     }
+}
+
+@media screen and (max-width: 992px) {
+
+    /* + HEADER */
+    /* + NAVBAR */
+    .background {
+        height: 600px;
+    }
+
+    .navbar__estilo {
+        justify-content: space-around;
+        margin: var(--spacing-8);
+    }
+
+    .logo__estilo {
+        max-width: 23vw;
+    }
+
+    .title__navbar {
+        white-space: wrap;
+    }
+
+    .navbar__items {
+        gap: var(--spacing-12);
+    }
+
+    .skills__estilos {
+        grid-template-columns: repeat(1, 2fr);
+        gap: var(--spacing-8);
+        padding: var(--spacing-8);
+    }
+
+    #hobbies article {
+        order: -1;
+        flex-basis: 100%;
+        /* Para asegurar que el artículo ocupe todo el ancho disponible si es necesario */
+    }
+
+    .skills__texto__parrafo {
+        font-size: var(--font-small);
+        text-align: center;
+        margin: auto var(--spacing-12);
+    }
+
+    .skills__estilos__div {
+        padding: var(--spacing-12);
+    }
+
+    .formacion__estilo {
+        gap: var(--spacing-8);
+        padding: var(--spacing-68) var(--spacing-12);
+    }
+
+    .formacion__contenedor {
+        gap: var(--spacing-12);
+    }
+
+    .formacion__card {
+        max-width: 100%;
+        max-height: 100%;
+        width: 25vw;
+        height: 43vh;
+        gap: var(--spacing-8);
+    }
+
+    .formacion__card__img {
+        width: 25vw;
+        height: 20vh;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: fill;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .formacion__card_texto {
+        max-width: 100%;
+        max-height: 100%;
+        width: 25vw;
+        height: 18vh;
+    }
+
+    /* + PROYECTOS */
+
+    .proyectos__texto__estilos {
+        height: 30vh;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* + HEADER */
+    /* + NAVBAR */
+    .banner__estilo {
+        gap: var(--spacing-16);
+    }
+
+    .navbar__estilo {
+        justify-content: center;
+        margin: inherit;
+    }
+
+    .logo__estilo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 10vw;
+        gap: 0;
+    }
+
+    .title__navbar {
+        white-space: nowrap;
+    }
+
+    .navbar__items {
+        display: none;
+    }
+
+    /* + PRESENTACION */
+
+    .presentacion__estilo {
+        gap: 0;
+    }
+
+    .presentacion__title {
+        font-size: 1.6em;
+    }
+
+    /* + MAIN */
+    /* + SOBRE MI */
+
+    .sobre__mi__estilos {
+        flex-direction: column;
+    }
+
+    .sobre__mi__parrafo {
+        font-size: var(--font-small);
+    }
+
+    .carrusel {
+        display: flex;
+        gap: var(--spacing-8);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carrusel img {
+        width: 20%;
+        transition: none;
+        filter: none;
+    }
+
+    /* + SKILLS */
+
+    .background__seccion {
+        padding: var(--spacing-20);
+        gap: var(--spacing-8);
+    }
+
+    .skills__estilos__div {
+        gap: var(--spacing-8);
+    }
+
+
+    /* + PROYECTOS */
+
+    .proyecto__lista {
+        font-size: var(--font-medium);
+    }
+
+    .item__proyecto {
+        font-size: var(--font-small);
+    }
+
+    .proyectos__estilos__cards__picture {
+        max-width: 100%;
+        /* width: 30vw; */
+        max-height: 100%;
+        height: 35vh;
+        object-fit: fill;
+    }
+
+    .proyectos__texto__estilos {
+        padding: var(--spacing-12);
+    }
+
+    /* + CONTACTO */
+    .estilo__formulario {
+        gap: var(--spacing-8);
+        padding: var(--spacing-36) var(--spacing-12);
+    }
+
+    .estilo__formulario__form {
+        box-sizing: content-box;
+    }
+
+    footer {
+        padding: var(--spacing-20);
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* + HEADER */
+    /* + NAVBAR */
+
+    .background {
+        height: 450px;
+        /* padding: 0; */
+    }
+
+    .banner__estilo {
+        justify-content: space-around;
+        gap: 0;
+        padding: 0 var(--spacing-12);
+    }
+
+
+    /* + MAIN */
+    /* + SOBRE MI */
+
+    .sobre__mi__estilos {
+        padding: var(--spacing-36) var(--spacing-12);
+    }
+
+    /* + FORMACION */
+
+    .formacion__estilo {
+        gap: var(--spacing-8);
+        padding: var(--spacing-36) var(--spacing-12);
+        margin: 0;
+    }
+
+    .formacion__contenedor {
+        flex-wrap: wrap;
+        gap: var(--spacing-12);
+        justify-content: center;
+    }
+
+    .formacion__card {
+        max-width: 100%;
+        max-height: 100%;
+        width: 35vw;
+        height: 55vh;
+        gap: var(--spacing-12);
+    }
+
+    .formacion__card__img {
+        width: 35vw;
+        height: 25vh;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .formacion__card_texto {
+        max-width: 100%;
+        max-height: 100%;
+        width: 30vw;
+        height: 22vh;
+        justify-content: space-between;
+    }
+
+    /* + PROYECTOS */
+
+    .proyectos__selector {
+        display: flex;
+        flex-direction: column;
+        gap: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .proyectos__selector__estilos__ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        /* white-space: wrap; */
+        justify-content: center;
+        gap: var(--spacing-8);
+    }
+
+    .item__proyecto {
+        font-size: var(--font-xsmall);
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .proyectos__estilos__cards__picture {
+        max-width: 100%;
+        width: 50vw;
+        max-height: 100%;
+        height: 35vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .proyectos__estilos__cards__img {
+        /* object-fit: fill; */
+        width: 100%;
+        height: 35vh;
+    }
+
+    .proyectos__texto__estilos {
+        width: 50vw;
+        padding: var(--spacing-16) var(--spacing-8);
+    }
+
+    /* + CONTACTO */
+
+    .estilo__formulario {
+        grid-template-columns: repeat(1, 2fr);
+        gap: var(--spacing-12);
+        padding: var(--spacing-20);
+    }
+
+    .estilo__formulario__form {
+        gap: var(--spacing-12);
+        padding: var(--spacing-16);
+        width: 55vw;
+    }
+
+    /* + FOOTER */
+
+    footer {
+        gap: var(--spacing-12);
+        padding: var(--spacing-20);
+    }
+
+    .footer__title {
+        font-size: var(--font-medium);
+    }
+
+    .footer__div {
+        height: 40px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    /* + HEADER */
+    /* + NAVBAR */
+
+    .background {
+        height: 400px;
+    }
+
+    .banner__estilo {
+        gap: var(--spacing-16);
+        justify-content: center;
+    }
+
+    .logo__estilo {
+        gap: var(--spacing-8);
+    }
+
+    /* + PRESENTACION */
+
+    .presentacion__enlaces__estilo {
+        max-width: 7vw;
+    }
+
+    /* + SKILLS */
+
+
+    .skills__parrafo {
+        display: none;
+    }
+
+    .skills__estilos__div {
+        gap: var(--spacing-24);
+    }
+
+    .skills__estilos__picture {
+        width: 100px;
+        height: 100px;
+        justify-content: center;
+        box-shadow: var(--text-shadow);
+        border-radius: 35px;
+    }
+
+    .skills__estilos__img {
+        max-width: 45px;
+        border-radius: 15px;
+    }
+
+    .boton__skills {
+        display: none;
+    }
+
+
+    /* + FORMACION */
+
+    .formacion__contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: var(--spacing-16);
+    }
+
+    .formacion__card {
+        max-width: 100%;
+        max-height: 100%;
+        width: 45vw;
+        height: 48vh;
+    }
+
+    .formacion__card__img {
+        width: 45vw;
+        height: 22vh;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: fill;
+    }
+
+    .formacion__card_texto {
+        max-width: 100%;
+        max-height: 100%;
+        width: 45vw;
+        height: 18vh;
+    }
+
+    /* + PROYECTOS */
+
+    .proyectos__estilos__cards {
+        width: 60vw;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .proyectos__estilos__cards__picture {
+        max-width: 100%;
+        width: 60vw;
+        max-height: 100%;
+    }
+
 }
