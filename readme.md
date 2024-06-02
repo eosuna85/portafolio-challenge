@@ -13,14 +13,14 @@ B. Funcionalidad Avanzada: Se han añadido características y herramientas para 
 C. Estructura del sitio: 
 
 - Elementos principales de la página:
-    - 1. Título de su sitio web
-    - 2. Menú principal
-    - 3. Sección acerca de mí
-    - 4. Sección de Skills y Hobbies
-    - 5. Sección Formaciones y Cursos
-    - 6. Sección de experiencia en programación
-    - 7. Formulario de contacto
-    - 8. Footer
+    - Título de su sitio web
+    - Menú principal
+    - Sección acerca de mí
+    - Sección de Skills y Hobbies
+    - Sección Formaciones y Cursos
+    - Sección de experiencia en programación
+    - Formulario de contacto
+    - Footer
 
 D. Diseño y Estilo:
 - Colores:

@@ -700,6 +700,7 @@ main {
     box-shadow: var(--text-shadow);
     background: rgb(173, 172, 172);
     background: linear-gradient(346deg, rgba(147, 147, 147, 0.577) 16%, rgba(250, 250, 250, 0.76) 93%);
+    width: 35vw;
 }
 
 .estilo__formulario__label {
