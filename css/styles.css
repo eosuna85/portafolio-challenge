@@ -1326,8 +1326,9 @@ footer {
     .formacion__card_texto {
         max-width: 100%;
         max-height: 100%;
-        width: 45vw;
-        height: 18vh;
+        width: 100%;
+        height: 150px;
+        padding: var(--spacing-12);
     }
 
     /* + PROYECTOS */
@@ -1347,11 +1348,11 @@ footer {
     .proyectos__texto__estilos {
         align-items: center;
         justify-content: space-between;
+        padding: var(--spacing-16);
+        width: 220px;
+        height: 160px;
     }
 
 
-    .estilo__formulario__form {
-        width: 80%;
-    }
     
 }
